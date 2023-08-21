@@ -12,7 +12,7 @@ class Destination extends Model
         'image' , 
         'title' ,
         'location' , 
-        'reason' ,
+        'reason'
     ];
     protected $hidden = [
         'created_at',
