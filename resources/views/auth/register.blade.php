@@ -70,9 +70,12 @@
                                 <button type="submit" class="submit-button">
                                     {{ __('Aceptar') }}
                                 </button>
-
-                                <div><p>¿Ya tienes una cuenta? Accede</p><a href="">Aquí</a></div>
+                                <a class="cancel-button" href="{{ url('/') }}">Cancelar</a>
                                 
+
+                                <div><p>¿Ya tienes una cuenta? Accede</p><a href="{{ route('login') }}">Aquí</a></div>
+                                
+
                             </div>
                         </div>
                     </form>

@@ -96,8 +96,12 @@ div{
 }
 
 .cancel-button {
-    color: var(--blue-primary);
-    text-decoration: none;
+    background-color: #FF0060;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
 }
