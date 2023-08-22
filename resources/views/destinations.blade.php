@@ -9,6 +9,7 @@
 
     
 </head>
+
 <body class="destinations">
     @foreach ($destinations as $destination)
     <div class="destinations-image"> <img src="{{ $destination->image }}" alt="{{ $destination->title }}" width="100"></div>
