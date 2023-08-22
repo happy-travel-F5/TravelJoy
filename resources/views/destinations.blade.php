@@ -11,11 +11,11 @@
 </head>
 <body class="destinations">
     @foreach ($destinations as $destination)
-    <div class="image"> <img src="{{ $destination->image }}" alt="{{ $destination->title }}" width="100"></div>
+    <div class="destinations-image"> <img src="{{ $destination->image }}" alt="{{ $destination->title }}" width="100"></div>
     <!-- ... Rest of the HTML ... -->
-    <div class="title">{{ $destination->title }}</div>
+    <div class="destinations-title">{{ $destination->title }}</div>
     <!-- ... Rest of the HTML ... -->
-    <div class="artist">{{ $destination->location }}</div>
+    <div class="destinations-location">{{ $destination->location }}</div>
     <!-- ... Rest of the HTML ... -->
     @endforeach
 </body>
