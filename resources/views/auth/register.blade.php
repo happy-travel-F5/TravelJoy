@@ -1,21 +1,25 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+@section('styles')
+    <link href="{{ asset('css/register.css') }}" rel="stylesheet">
+@endsection
 
-                <div class="card-body">
+@section('content')
+<div class="custom-container">
+   
+            <div class="custom-card">
+                <div class="custom-form-header">{{ __('Registro de usuario') }}</div>
+                <div class="red-line"></div>
+
+                <div class="custom-form-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                        <div class="custom-form">
+                            <label for="name" class="custom-form-label">{{ __('Nombre') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            <div class="input-container" >
+                                <input id="name" type="text" class="custom-form-input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Escribe tu nombre...">
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -25,11 +29,11 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                        <div>
+                            <label for="email" class="custom-form-label">{{ __('E-Mail') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <div class="input-container">
+                                <input id="email" type="email" class="custom-form-input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Escribe tu email...">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -39,11 +43,11 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                        <div>
+                            <label for="password" class="custom-form-label">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            <div class="input-container">
+                                <input id="password" type="password" class="custom-form-input @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Escribe tu contraseña...">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -53,19 +57,22 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                        <div>
+                            <label for="password-confirm" class="custom-form-label">{{ __('Confirm Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            <div class="input-container">
+                                <input id="password-confirm" type="password" class="custom-form-input" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                        <div class="custom-button-submit">
+                            <div>
+                                <button type="submit" class="submit-button">
+                                    {{ __('Aceptar') }}
                                 </button>
+
+                                <div><p>¿Ya tienes una cuenta? Accede</p><a href="">Aquí</a></div>
+                                
                             </div>
                         </div>
                     </form>
@@ -75,3 +82,4 @@
     </div>
 </div>
 @endsection
+
