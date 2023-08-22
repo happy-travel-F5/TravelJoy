@@ -19,3 +19,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/header', function () {
     return view('header');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
