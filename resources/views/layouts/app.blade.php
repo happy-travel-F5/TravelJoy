@@ -10,7 +10,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-<<<<<<< Updated upstream
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
@@ -19,24 +18,13 @@
     <link rel="stylesheet" href="{{ asset('css/register.css') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @yield('styles')
-=======
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
->>>>>>> Stashed changes
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-<<<<<<< Updated upstream
                 <img src="{{ asset('images/Logo.svg') }}" alt="Register" width="120">
-=======
-                    {{ config('app.name', 'Laravel') }}
->>>>>>> Stashed changes
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -52,7 +40,6 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-<<<<<<< Updated upstream
                         <li class="nav-item">
                                     <a class="nav-link" href="{{ route('destinations') }}">
                                     <img src="{{ asset('images/Home-icon.svg') }}" alt="Register" width="20">
@@ -64,17 +51,6 @@
                                     <a class="nav-link" href="{{ route('register') }}">
                                     <img src="{{ asset('images/Avatar-icon.svg') }}" alt="Register" width="20">
                                     </a>
-=======
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
->>>>>>> Stashed changes
                                 </li>
                             @endif
                         @else
