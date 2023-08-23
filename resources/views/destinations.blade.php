@@ -24,10 +24,13 @@
         
             <div class="destinations-container">
                 <img class="destinations-img" src="{{ $destination->image }}" alt="{{ $destination->title }}">
+                
                 <div class="destinations-info">
                     <div class="destinations-title">{{ $destination->title }}</div>
                     <div class="destinations-location">{{ $destination->location }}</div>
                 </div>
+                
+
             </div>
     @endforeach
     @endsection
