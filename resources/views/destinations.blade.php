@@ -18,13 +18,17 @@
 <body class="destinations">
     @extends('layouts.app')
     @section('content')
+    <div class="destinations-grid">
     @foreach ($destinations as $destination)
-    <div class="destinations-image"> <img src="{{ $destination->image }}" alt="{{ $destination->title }}" width="100"></div>
-    <!-- ... Rest of the HTML ... -->
-    <div class="destinations-title">{{ $destination->title }}</div>
-    <!-- ... Rest of the HTML ... -->
-    <div class="destinations-location">{{ $destination->location }}</div>
-    <!-- ... Rest of the HTML ... -->
+  
+        
+            <div class="destinations-container">
+                <img class="destinations-img" src="{{ $destination->image }}" alt="{{ $destination->title }}">
+                <div class="destinations-info">
+                    <div class="destinations-title">{{ $destination->title }}</div>
+                    <div class="destinations-location">{{ $destination->location }}</div>
+                </div>
+            </div>
     @endforeach
     @endsection
 </body>
