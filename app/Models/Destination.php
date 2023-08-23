@@ -11,7 +11,7 @@ class Destination extends Model
     protected $fillable =[
         'image' , 
         'title' ,
-        'location' , 
+        'location', 
         'reason'
     ];
     protected $hidden = [

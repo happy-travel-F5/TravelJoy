@@ -1,22 +1,26 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DestinationController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', function () {
-    return view('welcome');
+// Rutas para mostrar y crear destinos (adapta según tu lógica)
+
+Route::get('/', [DestinationController::class, 'index'])->name('destinations');
+// Route::get('/destinations/{id}', [DestinationController::class, 'show'])->name('destinations.show');
+
+// Route::group(['middleware' => 'auth'], function () {
+//     Route::get('/create-destination', [DestinationController::class, 'create'])->name('destinations.create');
+//     Route::post('/store-destination', [DestinationController::class, 'store'])->name('destinations.store');
+// });
+
+// Ruta para mostrar la vista del encabezado
+Route::get('/header', function () {
+    return view('header');
 });
 
-Route::get('/destinations', [DestinationController::Class, 'index'])->name('destinations');
-   
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
