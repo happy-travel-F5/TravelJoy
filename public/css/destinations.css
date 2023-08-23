@@ -1,2 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
 
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas horizontales */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio interno */
+}
+
+.destinations-container {
+    width: 300px;
+    background-color: #FBFDCE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+}
+
+.destinations-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.destinations-title {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 25px;
+    margin: 0 1.5rem;
+    color: #0079ff;
+    font-weight: bold;
+    margin-top: 10px; /* Agrega un poco de espacio entre el título y la ubicación */
+}
+
+.destinations-location {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 20px;
+    margin: 0 0 1rem 1.5rem;
+    color: #0079ff;
+    margin-top: 0.1px;
+}
+
