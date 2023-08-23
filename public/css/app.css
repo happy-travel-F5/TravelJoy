@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color-primary: #0079FF;
+    --color-success: #00DFA2;
+    --color-danger: #FF0060;
+    --color-secundary: #FBFDCE;
+  }
