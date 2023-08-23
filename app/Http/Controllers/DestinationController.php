@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Destination;
 use Illuminate\Http\Request;
 
 class DestinationController extends Controller
@@ -12,8 +13,7 @@ class DestinationController extends Controller
      */
     public function index()
     {
-        $destinantion= Destination::all();
-        return view('destinations', compact('destinations'));//
+        return view('destinations');//
     }
 
     /**
@@ -21,7 +21,7 @@ class DestinationController extends Controller
      */
     public function create()
     {
-        //
+        return view('destinations.create');//
     }
 
     /**
@@ -37,7 +37,8 @@ class DestinationController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $destination = Destination::findOrFail($id);
+        return view('destinations.detail', compact('destinations'));//
     }
 
     /**
@@ -45,7 +46,8 @@ class DestinationController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $destinantion= Destination::findOrFail($id);
+        return view('destinations.edit', compact('destinations'));//
     }
 
     /**
@@ -53,14 +55,25 @@ class DestinationController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
-    }
+        $destinantion= Destination::findOrFail($id);
 
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'location' => 'required|string|max:255',
+            'reason' => 'required|string',
+        ]);
+
+        $destinantion->update($request->all());
+    
+    return redirect()->route('destinations.show', ['destinations' => $destino->id])->with('success', 'Destino actualizado exitosamente.');
+    }
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
     {
-        //
+        $destinantion = Destination::findOrFail($id);
+        $destinantion->delete();
+        return redirect()->route('destinations.index')->with('success', 'Destino eliminado exitosamente.');//
     }
 }
