@@ -17,3 +17,4 @@ Route::get('/header', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/search', [DestinationController::class, 'search'])->name('search');

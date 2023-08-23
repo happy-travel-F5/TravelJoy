@@ -37,6 +37,11 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+                    <!--buscador-->
+                    <form action="{{ route('search') }}" method="GET">
+                        <input type="text" name="query" placeholder="Search...">
+                        <button type="submit">Buscar</button>
+                    </form>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
