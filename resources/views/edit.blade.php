@@ -38,4 +38,12 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        @if(session('success'))
+            alert("{{ session('success') }}");
+            window.location.href = "{{ route('destinations') }}";
+        @endif
+    </script>
+    
 @endsection
