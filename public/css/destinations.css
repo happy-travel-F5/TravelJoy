@@ -77,3 +77,36 @@
     width: 20px;
     height: 20px;
 }
+
+.edit-buttons {
+    position: relative;
+    left: 76%;
+    bottom: 23%;
+   
+}
+.button-info {
+    position: relative;
+    left: 40%;
+    bottom: 85%;
+    background: none;
+    border: none;
+   
+}
+
+.button-edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-icon {
+    width: 18px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.edit-reason {
+    font-size: 1rem;
+    margin-top: 10px; /* Margen superior para separar del contenido superior */
+    color: #0079FF;
+}

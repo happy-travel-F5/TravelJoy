@@ -1,35 +1,40 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Destinations</title>
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link rel="stylesheet" href="{{ asset('css/destinations.css') }}">  
-</head>
+@extends('layouts.app')
 
-<div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            @if (Route::has('login'))
-                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                   
-                </div>
-            @endif
+@section('styles')
+    <link href="{{ asset('css/destinations.css') }}" rel="stylesheet">
+@endsection
 
-<body class="destinations">
-    @extends('layouts.app')
-    @section('content')
-    <div class="destinations-grid">
+@section('content')
+<div class="destinations-grid">
     @foreach ($destinations as $destination)
-  
-        
-            <a href="{{ route('destinations.show', ['id' => $destination->id]) }}" class="destinations-container">
+        <div class="destinations-container">
+            <a href="{{ route('destinations.show', ['id' => $destination->id]) }}"> <!-- Enlace a la vista de detalles -->
                 <img class="destinations-img" src="{{ $destination->image }}" alt="{{ $destination->title }}">
-                <div class="destinations-info">
-                    <div class="destinations-title">{{ $destination->title }}</div>
-                    <div class="destinations-location">{{ $destination->location }}</div>
-                </div>
             </a>
+            <div class="destinations-info">
+                <div class="destinations-title">{{ $destination->title }}</div>
+                <div class="destinations-location">{{ $destination->location }}</div>
+            </div>
+
+            @auth
+                <!-- Mostrar botones de editar y eliminar solo si el usuario es el propietario del destino -->
+                @if ($destination->user_id == auth()->id())
+                    <button type="button" class="button-info">
+                        <img src="{{ asset('images/Info-icon.svg') }}" width="33" alt="Icono de información">
+                    </button>
+                    <div class="edit-buttons">
+                        <a href="{{ route('destinations.edit', ['id' => $destination->id]) }}"> <img src="{{ asset('images/Edit-icon.svg') }}" alt="Icono de editar" width="20"></a>
+                        <form action="{{ route('destinations.destroy', ['id' => $destination->id]) }}" method="POST" style="display: inline-block">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="button-edit">
+                                <img src="{{ asset('images/Delete-icon.svg') }}" width="18" alt="Eliminar" class="button-icon">
+                            </button>
+                        </form>
+                    </div>
+                @endif
+            @endauth
+        </div>
     @endforeach
-    @endsection
-</body>
-</html>
+</div>
+@endsection
