@@ -43,9 +43,13 @@ Travel Joy es un proyecto que ha solicitado un cliente con el objetivo de que us
  <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='PHP' src='https://img.shields.io/badge/PHP-100000?style=for-the-badge&logo=PHP&logoColor=FFFFFF&labelColor=760B93&color=760B93'/></a>
  
 </h4>
+
 ## Instalación
+
 <h4 align="center">
-:construcción:
+⚒️
+ 
 ## Colaboradoras
+ 
 | [<img src="https://avatars.githubusercontent.com/u/131767553?v=4" width=115><br><sub>Rosa Pedret</sub>](https://github.com/Rosapedret2) |    [<img src="https://avatars.githubusercontent.com/u/96080945?v=4" width=115><br><sub>Jeaneth Sánchez Núñez</sub>](https://github.com/jeanethsn) |  [<img src="https://avatars.githubusercontent.com/u/131755120?v=4" width=115><br><sub>Milena Halas</sub>](https://github.com/LenaHalas) |  [<img src="https://avatars.githubusercontent.com/u/132341389?v=4" width=115><br><sub>Valentina Rios</sub>](https://github.com/valblue21) |
 | :---: | :---: | :---: | :---: |
