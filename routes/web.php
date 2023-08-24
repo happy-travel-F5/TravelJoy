@@ -9,16 +9,14 @@ use App\Http\Controllers\DestinationController;
 
 
 Route::get('/', [DestinationController::class, 'index'])->name('destinations');
-Route::get('/create', [DestinationController::class, 'create'])->name('create');
-Route::post('/store', [DestinationController::class, 'store'])->name('store');
-Route::get('/show/{destination}', [DestinationController::class, 'show'])->name('show');
-Route::get('/edit/{destination}', [DestinationController::class, 'edit'])->name('edit');
-Route::put('/update/{destination}', [DestinationController::class, 'update'])->name('update');
-Route::delete('/destroy/{destination}', [DestinationController::class, 'destroy'])->name('destroy');
+Route::get('/destination', [DestinationController::class, 'create'])->name('create');
+Route::post('/destination', [DestinationController::class, 'store'])->name('store');
+Route::get('/destinations/{id}', [DestinationController::class, 'show'])->name('show');
+Route::get('/destination/{id}', [DestinationController::class, 'edit'])->name('edit');
+Route::put('/destination/{id}', [DestinationController::class, 'update'])->name('update');
+Route::delete('/destination/{id}', [DestinationController::class, 'destroy'])->name('destroy');
 
 
-
-Route::resource('destinations', DestinationController::class);
 
 // Route::middleware(['auth'])->group(function () {
  

@@ -8,29 +8,25 @@
     <div class="create-container"> 
     <h2 class="create-title">Crear Destino</h2>
         <div class="red-line"></div>
-        <form class="create-form" action="{{ route('store') }}" method="POST" enctype="multipart/form-data">
+        <form class="create-form" action="{{ route('store') }}" method="POST">
             @csrf
             <div class="container-left">
             <label class="create-label" for="title">Título:</label>
             <input class="create-input" type="text" id="title" name="title" required placeholder="Escribe el titulo de tu destino">
             <label class="create-label" for="location">Ubicación:</label>
             <input class="create-input" type="text" id="location" name="location" required placeholder="Escribe la ubicación de tu destino">
-            <label class="create-label" for="imageInput">Selecciona imágenes:</label>
-            <div id="imageDropArea" contenteditable="true" class="image-drop-area">
-    Sube una imagen
-</div>
-<input class="create-input" type="file" id="imageInput" accept="image/*" multiple style="display: none;" name="image">
-<button class="create-button-submit" type=submit>Aceptar</button>
-<a class="cancel-button" href="{{ url('/') }}">Cancelar</a>
+            <label class="create-label" for="image">Selecciona imágenes:</label>
+            <input class="create-input" type="text" id="image" name="image">
+ 
+
+            <button class="create-button-submit" type=submit>Aceptar</button>
+            <a class="cancel-button" href="{{ url('/') }}">Cancelar</a>
         </div>       
-<div class="container-rigth">
+            <div class="container-rigth">
          <label class="create-label" for="reason">¿Por qué quieres viajar allí?</label>
             <textarea class="create-input" id="reason" name="reason" rows="4" required></textarea>
          </div>  
-
-
-           
-        </form>
+    </form>
     </div>
 @endsection
 

@@ -7,7 +7,7 @@ class DestinationController extends Controller
     public function index()
     {
         $destinations = Destination::all();
-        return view('/destinations', compact('destinations'));
+        return view('destinations', compact('destinations'));
     }
     public function create()
     {
@@ -16,19 +16,19 @@ class DestinationController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'required',
             'title' => 'required',
             'location' => 'required',
             'reason' => 'required',
         ]);
-        $imagePath = $data['image']->store('images', 'public');
-        Destination::create([
-            'image' => $imagePath,
-            'title' => $data['title'],
-            'location' => $data['location'],
-            'reason' => $data['reason'],
+        // $imagePath = $data['image']->store('images', 'public');
+       $destinationShow =  Destination::create([
+            'image' => $request->image,
+            'title' => $request->title,
+            'location' => $request->location,
+            'reason' => $request->reason,
         ]);
-        return redirect()->route('/destinations')->with('success', 'Destino creado exitosamente.');
+        return redirect()->route('show',$destinationShow->id)->with('success', 'Destino creado exitosamente.');
     }
     public function show(int $id)
     {
