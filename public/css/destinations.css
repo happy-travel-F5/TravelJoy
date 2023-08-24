@@ -45,8 +45,9 @@
 }
 
 .search-container {
-    position: relative;
+    /* position: relative; */
     display: flex;
+    justify-content: end;
     align-items: center;
     background-color: #FBFDCE;
     border-radius: 20px;

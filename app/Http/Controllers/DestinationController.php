@@ -51,8 +51,6 @@ public function update(Request $request, int $id)
         'reason' => 'required',
     ]);
 
-    dd($data);
-
     $destination->update([
         'image' => $data['image'],
         'title' => $data['title'],
