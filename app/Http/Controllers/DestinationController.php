@@ -22,7 +22,7 @@ class DestinationController extends Controller
             'reason' => 'required',
         ]);
 
-        $user = Auth::user();
+       
         // $imagePath = $data['image']->store('images', 'public');
         $destinationShow = auth()->user()->destinations()->create([
             'image' => $request->image,
