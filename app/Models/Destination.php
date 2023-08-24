@@ -18,6 +18,13 @@ class Destination extends Model
         'created_at',
         'updated_at',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    
     static function search($query){
     $results = Destination::where('title', 'LIKE', "%$query%")
                           ->orWhere('location', 'LIKE', "%$query%")

@@ -21,12 +21,15 @@ class DestinationController extends Controller
             'location' => 'required',
             'reason' => 'required',
         ]);
+
+        $user = Auth::user();
         // $imagePath = $data['image']->store('images', 'public');
-       $destinationShow =  Destination::create([
+        $destinationShow = auth()->user()->destinations()->create([
             'image' => $request->image,
             'title' => $request->title,
             'location' => $request->location,
             'reason' => $request->reason,
+            'user_id' => auth()->id(), 
         ]);
         return redirect()->route('destinations.show',['id' => $destinationShow->id])->with('success', 'Destino creado exitosamente.');
     }
