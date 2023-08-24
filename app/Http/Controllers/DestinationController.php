@@ -28,7 +28,7 @@ class DestinationController extends Controller
             'location' => $request->location,
             'reason' => $request->reason,
         ]);
-        return redirect()->route('destinations.show',$destinationShow->id)->with('success', 'Destino creado exitosamente.');
+        return redirect()->route('destinations.show',['id' => $destinationShow->id])->with('success', 'Destino creado exitosamente.');
     }
     public function show(int $id)
     {
@@ -50,6 +50,8 @@ public function update(Request $request, int $id)
         'location' => 'required',
         'reason' => 'required',
     ]);
+
+    dd($data);
 
     $destination->update([
         'image' => $data['image'],
