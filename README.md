@@ -6,12 +6,12 @@
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
 <img src="./public/images/travel.jpg" alt="canoa en agua con fondo rocoso" style="height: 400px; width: 100%;">
-![logo happy travel](/images/Logo.svg)
+
 ## Introducción
 Travel Joy es un proyecto que ha solicitado un cliente con el objetivo de que usuarios no autenticados puedan mirar todos los destinos soñados de otros usuarios y a su vez un usuario autenticado pueda crear, editar y eliminar su propios sueños viajeros.
 ## Contexto del proyecto
  La empresa HappyTravel les ha contratado para desarrollar una aplicación web, para que las personas puedan contar los destinos que les encantaría visitar y su razón.
-## :martillo:Funcionalidades del proyecto
+## ⛏️ Funcionalidades del proyecto
  - `Funcionalidad 1`: La página de inicio contiene todos los destinos de todos los usuarios, donde se mostrará la imagen, el título y la ubicación de cada uno, esta página la puede ver cualquier usuario no autorizado.
  - `Funcionalidad 2`: Formulario de registro que pide, nombre, e-mail y contraseña.
  - `Funcionalidad 3`: Formulario de acceso que pide e-mail y contraseña.
@@ -25,26 +25,23 @@ Travel Joy es un proyecto que ha solicitado un cliente con el objetivo de que us
  - `Funcionalidad 11`: La página principal del usuario autenticado estará ordenada de manera que muestre primero sus propios destinos y a continuación los del resto de usuarios.
 ## Estado del proyecto
 <h4 align="center">
-:construcción: Proyecto en construcción :construcción:
+🚧 Proyecto en construcción 🚧
 </h4>
+
 ## Figma
-[Figma Desktop](https://www.figma.com/file/twPJOzEo5hZJZ7srsEt10y/HappyTravel?node-id=0%3A1&mode=dev)
-[Figma Mobile](https://www.figma.com/file/twPJOzEo5hZJZ7srsEt10y/HappyTravel?node-id=10%3A834&mode=dev)
+
+[Desktop](https://www.figma.com/file/twPJOzEo5hZJZ7srsEt10y/HappyTravel?node-id=0%3A1&mode=dev)
+
+[Mobile](https://www.figma.com/file/twPJOzEo5hZJZ7srsEt10y/HappyTravel?node-id=10%3A834&mode=dev)
 ## Tecnologías utilizadas
  <h4 align="center">
-:marca_de_verificación_blanca: HTML :marca_de_verificación_blanca:
-</h4>
-<h4 align="center">
-:marca_de_verificación_blanca: CSS :marca_de_verificación_blanca:
-</h4>
-<h4 align="center">
-:marca_de_verificación_blanca: Javascript :marca_de_verificación_blanca:
-</h4>
-<h4 align="center">
-:marca_de_verificación_blanca: PHP - Laravel :marca_de_verificación_blanca:
-</h4>
-<h4 align="center">
-:marca_de_verificación_blanca: MySQL :marca_de_verificación_blanca:
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='html' src='https://img.shields.io/badge/HTML-100000?style=for-the-badge&logo=html&logoColor=FFFFFF&labelColor=F44C0F&color=FF5500'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='css' src='https://img.shields.io/badge/CSS-100000?style=for-the-badge&logo=css&logoColor=FFFFFF&labelColor=0800F7&color=0038FF'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='JavaScript' src='https://img.shields.io/badge/Javascript-100000?style=for-the-badge&logo=JavaScript&logoColor=FFFFFF&labelColor=FFD902&color=FFD902'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='MySQL' src='https://img.shields.io/badge/MySQL-100000?style=for-the-badge&logo=MySQL&logoColor=FFFFFF&labelColor=5147DA&color=EEA131'/></a>
+ <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='LARAVEL' src='https://img.shields.io/badge/LARAVEL-100000?style=for-the-badge&logo=LARAVEL&logoColor=FF1E00&labelColor=FFFFFF&color=F00A0A'/></a>
+ <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='PHP' src='https://img.shields.io/badge/PHP-100000?style=for-the-badge&logo=PHP&logoColor=FFFFFF&labelColor=760B93&color=760B93'/></a>
+ 
 </h4>
 ## Instalación
 <h4 align="center">
