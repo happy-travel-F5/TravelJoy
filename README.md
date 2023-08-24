@@ -1,8 +1,11 @@
+<p align="center">
+ <img src="./public/images/Logo.svg" alt="logo" style="width: 15%;">
+   </p>
 <h1 align="center"> Travel Joy - Project Happy Travel - Factoria F5 </h1>
   <p align="center">
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
-<img src="./images/travel.jpg" alt="canoa en agua con fondo rocoso" style="height: 200px; width: 100%;">
+<img src="./public/images/travel.jpg" alt="canoa en agua con fondo rocoso" style="height: 400px; width: 100%;">
 ![logo happy travel](/images/Logo.svg)
 ## Introducción
 Travel Joy es un proyecto que ha solicitado un cliente con el objetivo de que usuarios no autenticados puedan mirar todos los destinos soñados de otros usuarios y a su vez un usuario autenticado pueda crear, editar y eliminar su propios sueños viajeros.
