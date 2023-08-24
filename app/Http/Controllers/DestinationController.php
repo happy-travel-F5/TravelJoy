@@ -66,10 +66,10 @@ class DestinationController extends Controller
 
 public function search(Request $request)
 {
-   $results = Destination::search($request->search);
+   $destinations = Destination::search($request->search);
     
 
-    return view('results', ['results' => $results]);
+    return view('destinations', ['destinations' => $destinations]);
 }
 }
 
