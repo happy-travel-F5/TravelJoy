@@ -8,8 +8,8 @@
                 <h5 class="card-title">{{ $destination->title }}</h5>
                 <p class="card-text"><strong>Localización:</strong> {{ $destination->location }}</p>
                 <p class="card-text"><strong>Motivo para viajar:</strong> {{ $destination->reason }}</p>
-                <a href="{{ route('destination.edit', ['destination' => $destination->id]) }}" class="btn btn-primary">Editar</a>
-                <form action="{{ route('destinations.destroy', ['destination' => $destination->id]) }}" method="POST" style="display: inline-block">
+                <a href="{{ route('destinations.edit', ['id' => $destination->id]) }}" class="btn btn-primary">Editar</a>
+                <form action="{{ route('destinations.destroy', ['id' => $destination->id]) }}" method="POST" style="display: inline-block">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Eliminar</button>

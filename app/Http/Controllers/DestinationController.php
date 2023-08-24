@@ -28,7 +28,7 @@ class DestinationController extends Controller
             'location' => $request->location,
             'reason' => $request->reason,
         ]);
-        return redirect()->route('show',$destinationShow->id)->with('success', 'Destino creado exitosamente.');
+        return redirect()->route('destinations.show',$destinationShow->id)->with('success', 'Destino creado exitosamente.');
     }
     public function show(int $id)
     {
@@ -45,14 +45,14 @@ public function update(Request $request, int $id)
 {
     $destination = Destination::findOrFail($id);
     $data = $request->validate([
-        'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        'image' => 'required',
         'title' => 'required',
         'location' => 'required',
         'reason' => 'required',
     ]);
 
     $destination->update([
-        'image' => $imagePath,
+        'image' => $data['image'],
         'title' => $data['title'],
         'location' => $data['location'],
         'reason' => $data['reason'],

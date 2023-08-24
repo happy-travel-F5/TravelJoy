@@ -9,12 +9,12 @@ use App\Http\Controllers\DestinationController;
 
 
 Route::get('/', [DestinationController::class, 'index'])->name('destinations');
-Route::get('/destination', [DestinationController::class, 'create'])->name('create');
-Route::post('/destination', [DestinationController::class, 'store'])->name('store');
-Route::get('/destinations/{id}', [DestinationController::class, 'show'])->name('show');
-Route::get('/destination/{id}', [DestinationController::class, 'edit'])->name('edit');
-Route::put('/destination/{id}', [DestinationController::class, 'update'])->name('update');
-Route::delete('/destination/{id}', [DestinationController::class, 'destroy'])->name('destroy');
+Route::get('/destination', [DestinationController::class, 'create'])->name('destinations.create');
+Route::post('/destination', [DestinationController::class, 'store'])->name('destinations.store');
+Route::get('/destinations/{id}', [DestinationController::class, 'show'])->name('destinations.show');
+Route::get('/destination/{id}', [DestinationController::class, 'edit'])->name('destinations.edit');
+Route::put('/destination/{id}', [DestinationController::class, 'update'])->name('destinations.update');
+Route::delete('/destination/{id}', [DestinationController::class, 'destroy'])->name('destinations.destroy');
 
 
 
