@@ -43,7 +43,7 @@ div{
 
 
 .custom-form-label {
-    color: var(--blue, #0079FF);
+    color: #0079FF;
     display: block;
     font-weight: 700;
     text-align: left;
