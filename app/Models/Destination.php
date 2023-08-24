@@ -18,4 +18,10 @@ class Destination extends Model
         'created_at',
         'updated_at',
     ];
+    static function search($query){
+    $results = Destination::where('title', 'LIKE', "%$query%")
+                          ->orWhere('location', 'LIKE', "%$query%")
+                          ->get();
+    return $results;
+                        }
 }

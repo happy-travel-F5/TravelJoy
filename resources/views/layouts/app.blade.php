@@ -37,6 +37,15 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+                    <!--buscador-->
+                    <form action="{{ route('search') }}" method="GET">
+                        <div class="search-container">
+                            <input type="text" class="search-input" name='search' placeholder="Search..." />
+                            <div class="search-icon">
+                                <img src="{{ asset('images/Glass-icon.svg') }}" alt="Search Icon" />
+                            </div>
+                        </div>
+                    </form>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
