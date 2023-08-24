@@ -66,10 +66,8 @@ class DestinationController extends Controller
 
 public function search(Request $request)
 {
-    $query = $request->input('query');
-    $results = Results::where('title', 'LIKE', "%$query%")
-                          ->orWhere('location', 'LIKE', "%$query%")
-                          ->get();
+   $results = Destination::search($request->search);
+    
 
     return view('results', ['results' => $results]);
 }

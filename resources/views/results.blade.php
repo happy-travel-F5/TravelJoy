@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-@foreach ($results as $destino)
+@foreach ($results as $result)
     <div>
-        <h3>{{ $destino->nombre }}</h3>
-        <p>{{ $destino->descripcion }}</p>
+        <h3>{{ $result->title }}</h3>
+        <p>{{ $result->location }}</p>
     </div>
 @endforeach
 </body>
