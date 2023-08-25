@@ -8,7 +8,7 @@
 <img src="./public/images/travel.jpg" alt="canoa en agua con fondo rocoso" style="height: 400px; width: 100%;">
 
 ## Introducción
-Travel Joy es un proyecto que ha solicitado un cliente con el objetivo de que usuarios no autenticados puedan mirar todos los destinos soñados de otros usuarios y a su vez un usuario autenticado pueda crear, editar y eliminar su propios sueños viajeros.
+Happy Travel es un proyecto que ha solicitado un cliente con el objetivo de que usuarios no autenticados puedan mirar todos los destinos soñados de otros usuarios y a su vez un usuario autenticado pueda crear, editar y eliminar su propios sueños viajeros.
 ## Contexto del proyecto
  La empresa HappyTravel les ha contratado para desarrollar una aplicación web, para que las personas puedan contar los destinos que les encantaría visitar y su razón.
 ## ⛏️ Funcionalidades del proyecto
