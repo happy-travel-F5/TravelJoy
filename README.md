@@ -10,7 +10,7 @@
 ## Introducción
 Happy Travel es un proyecto que ha solicitado un cliente con el objetivo de que usuarios no autenticados puedan mirar todos los destinos soñados de otros usuarios y a su vez un usuario autenticado pueda crear, editar y eliminar su propios sueños viajeros.
 ## Contexto del proyecto
- La empresa HappyTravel les ha contratado para desarrollar una aplicación web, para que las personas puedan contar los destinos que les encantaría visitar y su razón.
+ La empresa HappyTravel nos ha contratado para desarrollar una aplicación web, para que las personas puedan contar los destinos que les encantaría visitar y su razón.
 ## ⛏️ Funcionalidades del proyecto
  - `Funcionalidad 1`: La página de inicio contiene todos los destinos de todos los usuarios, donde se mostrará la imagen, el título y la ubicación de cada uno, esta página la puede ver cualquier usuario no autorizado.
  - `Funcionalidad 2`: Formulario de registro que pide, nombre, e-mail y contraseña.
