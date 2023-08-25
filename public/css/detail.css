@@ -1,0 +1,72 @@
+/* Estilos generales */
+.edit-container {
+    display: flex;
+    margin: 20px auto;
+    max-width: 800px;
+   
+    border-radius: 1rem;
+    padding: 20px;
+ 
+}
+
+/* Estilos para la imagen */
+.card-img-top {
+    width: 40%;
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+}
+
+/* Estilos para el contenido de la tarjeta */
+.edit-body {
+    flex-grow: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-info {
+    display: flex;
+    flex-direction: column; /* Cambio a columna para que Location esté debajo del Título */
+    margin-bottom: 10px;
+}
+
+.edit-info-header{
+    display: flex;
+    flex-direction: row;
+}
+.edit-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #FF0060;
+}
+
+.edit-text {
+    font-size: 1rem;
+    color: #FF0060;
+    margin-top: 5px; /* Margen superior para separar Título y Location */
+}
+
+.edit-buttons {
+    display: flex;
+    align-items: right;
+    justify-content: end;
+}
+
+.button-edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-icon {
+    width: 18px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.edit-reason {
+    font-size: 1rem;
+    margin-top: 10px; /* Margen superior para separar del contenido superior */
+    color: #0079FF;
+}

@@ -22,7 +22,11 @@
             </form>
             <a href="#" class="home-icon">
                 <img src="{{ asset('images/Home-icon.svg') }}" alt="Home">
-                
+            
+             <form action="{{ route('search') }}" method="GET">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Buscar</button>
+            </form>
                     <!-- Icono de home aquí -->
             </a>
 

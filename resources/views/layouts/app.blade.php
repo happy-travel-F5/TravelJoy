@@ -37,7 +37,16 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <!--buscador-->
+                    <form action="{{ route('search') }}" method="GET" class="d-flex">
+        <div class="search-container">
+            <input type="text" class="search-input" name='search' placeholder="Search..." />
+            <div class="search-icon">
+                <img src="{{ asset('images/Glass-icon.svg') }}" alt="Search Icon" />
+            </div>
+        </div>
+    </form>
+                    <ul class="navbar-nav">
                         <!-- Authentication Links -->
                         @guest
                         <li class="nav-item">
@@ -54,16 +63,30 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                        <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('destinations') }}">
+                                    <img src="{{ asset('images/Home-icon.svg') }}" alt="Register" width="20">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('destinations.create') }}">
+                                    <img src="{{ asset('images/Create-icon.svg') }}" alt="Register" width="20">
+                                    </a>
+                                </li>
+
+                            <li class="nav-item">
+                                <!-- <a class="nav-link dropdown-toggle" href="#" role="button"  aria-haspopup="true" aria-expanded="false" v-pre>
+                                  
+                                </a> -->
+                                
+
+                                <div class="logout-button">
+                                    <a class="nav-link" href="{{ route('logout') }}" href="#" role="button"  aria-haspopup="true" aria-expanded="false" v-pre
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+
+                                        <img src="{{ asset('images/Logout-icon.svg') }}" alt="Register" width="25">
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

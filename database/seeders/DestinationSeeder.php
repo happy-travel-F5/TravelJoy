@@ -18,7 +18,7 @@ class DestinationSeeder extends Seeder
         'title'=>'Alambra',
         'location'=>'Granada',
         'reason'=>'La Alhambra es un palacio y fortaleza ubicado en Granada, España. Es un destino turístico muy popular debido a su belleza arquitectónica, su historia rica y su importancia cultural.',
-        
+        'user_id' => 1,
         
        ]);
 
@@ -27,13 +27,15 @@ class DestinationSeeder extends Seeder
         'title'=>'Nuqui',
         'location'=>'Colombia',
         'reason'=>'Nuquí es un destino turístico en la costa pacífica de Colombia que atrae a viajeros que buscan experiencias auténticas en un entorno natural exuberante y menos desarrollado.',
-         ]);
+        'user_id' => 2,    
+    ]);
 
     Destination::create([
         'image' => 'images/filipinas.jpg',
         'title'=>'Cebú',
         'location'=>'Filipinas',
         'reason'=>'hermoso entorno natural, su rica historia y su oferta diversa de actividades para los viajeros.',
+        'user_id' => 3,
     ]);
     
     Destination::create([
@@ -41,6 +43,7 @@ class DestinationSeeder extends Seeder
         'title'=>'Venecia',
         'location'=>'Italia',
         'reason'=>'Venecia es una ciudad icónica ubicada en el noreste de Italia, conocida por su arquitectura única, sus canales serpenteantes y su rica historia. Viajar a Venecia puede ofrecer una experiencia encantadora y única.',
+        'user_id' => 1,
     ]);
     }
 }
