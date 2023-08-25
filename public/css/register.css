@@ -81,7 +81,7 @@ div{
 .custom-button-submit {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -104,4 +104,23 @@ div{
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
+}
+
+.login-link {
+    margin-top: 10px; /* Ajusta este valor según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.3rem;
+   font-weight: 700;
+}
+
+.login-link p {
+    margin-right: 5px; 
+    color:#0079FF;
+}
+
+a{
+    color: #00DFA2;
+    font-weight: 700;
 }
