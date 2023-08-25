@@ -49,6 +49,22 @@ Happy Travel es un proyecto que ha solicitado un cliente con el objetivo de que 
 <h4 align="center">
 ⚒️
  
+- composer require laravel/ui
+
+- php artisan ui bootstrap —auth
+
+- npm install
+
+- npm run dev
+
+- Crear una base de datos en mysql: happy_travel y crear nuevas tablas:
+ 
+-destinations.
+
+ -users.
+
+- php artisan migrate
+ 
 ## Colaboradoras
  
 | [<img src="https://avatars.githubusercontent.com/u/131767553?v=4" width=115><br><sub>Rosa Pedret</sub>](https://github.com/Rosapedret2) |    [<img src="https://avatars.githubusercontent.com/u/96080945?v=4" width=115><br><sub>Jeaneth Sánchez Núñez</sub>](https://github.com/jeanethsn) |  [<img src="https://avatars.githubusercontent.com/u/131755120?v=4" width=115><br><sub>Milena Halas</sub>](https://github.com/LenaHalas) |  [<img src="https://avatars.githubusercontent.com/u/132341389?v=4" width=115><br><sub>Valentina Rios</sub>](https://github.com/valblue21) |
